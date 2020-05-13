@@ -6,28 +6,28 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0003_landingpage'),
+        ("home", "0003_landingpage"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='landingpage',
-            name='f2',
+            model_name="landingpage",
+            name="f2",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='landingpage',
-            name='f3',
+            model_name="landingpage",
+            name="f3",
             field=models.TextField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='landingpage',
-            name='f4',
+            model_name="landingpage",
+            name="f4",
             field=models.CharField(blank=True, max_length=256, null=True),
         ),
         migrations.AddField(
-            model_name='landingpage',
-            name='f5',
+            model_name="landingpage",
+            name="f5",
             field=models.EmailField(blank=True, max_length=254, null=True),
         ),
     ]

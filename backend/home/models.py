@@ -36,7 +36,12 @@ class HomePage(models.Model):
 class Landingpage(models.Model):
     "Generated Model"
     header = models.TextField()
-    f2 = models.BigIntegerField(null=True, blank=True,)
-    f3 = models.TextField(null=True, blank=True,)
-    f4 = models.CharField(max_length=256, null=True, blank=True,)
-    f5 = models.EmailField(max_length=254, null=True, blank=True,)
+
+
+class Mname(models.Model):
+    "Generated Model"
+    f1 = models.BigIntegerField()
+    f2 = models.BooleanField()
+    f3 = models.DateTimeField(auto_now=True,)
+    f4 = models.URLField()
+    f5 = models.ManyToManyField("home.Landingpage", related_name="mname_f5",)
