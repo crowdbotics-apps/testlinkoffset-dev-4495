@@ -36,3 +36,7 @@ class HomePage(models.Model):
 class Landingpage(models.Model):
     "Generated Model"
     header = models.TextField()
+    f2 = models.BigIntegerField(null=True, blank=True,)
+    f3 = models.TextField(null=True, blank=True,)
+    f4 = models.CharField(max_length=256, null=True, blank=True,)
+    f5 = models.EmailField(max_length=254, null=True, blank=True,)
